@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.2fr auto 1fr auto;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                        ". main ."
+                        "footer footer footer";
+    background-color: #edd2cb;
+}
+
+
+header{
+    grid-area: header;
+    background: url(../images/lyn.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+h1 a{
+    color:white;
+    padding: 1rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #543c52;
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0.17rem;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding:1.2rem 0.8rem;
+    font-size: larger;
+}
+nav a:hover{
+    background-color: #361d32;
+    color: white;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2{
+    text-align: center;
+    color: black;
+}
+
+.main-section{
+    text-align: center;
+}
+
+.main-section a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.article-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article-section2{
+    color: black;
+    display: flex;
+}
+.article-section2 h2{
+    text-align: left;
+}
+
+.article-section2 img{
+    max-width: 60%;
+    max-height: auto;
+    padding: 1rem;
+    
+    align-items: right;
+}
+
+.article-section2 p{
+    text-align: left;
+    font-size: large;
+    align-items: left;
+    flex-direction: row;
+
+}
+
+
+article{
+    padding: 2rem;
+    background-color: #f1e8e6;
+}
+
+article img{
+    max-width: 100%;
+    max-height: auto;
+
+}
+
+footer{
+    color: white;
+    font-size: 1.5vh;
+    padding: 1rem;
+    background-color: #543c52;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
