@@ -66,6 +66,16 @@ main{
     flex-direction: column;
 }
 
+main a{
+    text-decoration: none;
+    border: solid #543c52;
+    background-color: #543c52;
+    color: white;
+    padding: 4px;
+}
+
+
+
 main h2{
     text-align: center;
     color: black;
@@ -76,10 +86,9 @@ main h2{
 }
 
 .main-section a{
-    display: flex;
+    margin-top: 1rem;
+    font-size: 16px;
     text-align: center;
-    text-decoration: none;
-    padding: 1rem;
 }
 
 .article-section{
