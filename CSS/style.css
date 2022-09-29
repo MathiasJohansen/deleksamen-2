@@ -15,6 +15,7 @@ body {
 header{
     grid-area: header;
     background: url(../images/lyn.jpg) no-repeat;
+    /*https://unsplash.com/photos/37wuETxVwTQ*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -72,9 +73,12 @@ main a{
     background-color: #543c52;
     color: white;
     padding: 4px;
+
 }
 
-
+main a:hover{
+    text-decoration: underline;
+}
 
 main h2{
     text-align: center;
@@ -95,6 +99,7 @@ main h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .article-section2{
