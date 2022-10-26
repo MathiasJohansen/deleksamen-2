@@ -65,6 +65,7 @@ main{
     grid-area: main;
     display: flex;
     flex-direction: column;
+    
 }
 
 main a{
@@ -95,16 +96,25 @@ main h2{
     text-align: center;
 }
 
+
+.CMS {
+    
+}
+
 .article-section{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 1rem;
+    
 }
 
 .article-section2{
     color: black;
-    
+    padding: 2rem;
+    background-color: #f1e8e6;
+    width: 100%;
+    height: auto;
 }
 .article-section2 article{
     display: flex;
@@ -145,15 +155,49 @@ main h2{
     flex-direction: row;
 }
 
-article{
-    padding: 2rem;
-    background-color: #f1e8e6;
-}
 
 article img{
+   
     max-width: 100%;
     max-height: auto;
 
+}
+
+.table {
+    display: flex;
+}
+
+.column {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+/*
+Kilder for informasjon og inspirasjon for tabell.
+Justert høyde for i forhold til innhold, har også lagt til centering i bredde for all tekst, og i høyde for overskrifter
+https://dev.to/flippedcoding/how-to-make-a-table-without-using-the-html-table-elements-5e11
+https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with-css
+*/
+.row {
+    border: 1px black solid;
+    height: 5em;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    
+}
+.rowTitle {
+    border: 1px black solid;
+    height: 5em;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    line-height: 5em;
+}
+.row-invis {
+    height: 5.1em;
+    margin: auto;
+    width: 100%;
 }
 
 footer{
