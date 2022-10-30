@@ -101,6 +101,11 @@ article {
     padding: 2rem;
     background-color: #f1e8e6;
 }
+article img{
+    max-width: 100%;
+    max-height: auto;
+
+}
 
 .article-section{
     display: flex;
@@ -125,15 +130,23 @@ article {
     text-align: left;
     display: block;
 }
-
+/*
 .article-section2 img{
     height: auto; 
     width: auto; 
     max-width: 300px; 
     max-height: 300px;
-    padding: 1rem; flex-wrap: wrap;
-}
+    padding: 1rem; 
+    flex-wrap: wrap;
+}*/
 
+.article-section2 img{
+    max-width: 50%;
+    max-height: auto;
+    padding: 1rem;
+    
+    align-items: right;
+}
 .article-section2 p{
     text-align: left;
     font-size: large;
@@ -240,7 +253,7 @@ article {
     grid-column: 4/4;
 }
 
-@media only screen
+/*@media only screen
 
 and (min-device-width: 375px)
 
@@ -267,7 +280,7 @@ and (max-device-width: 916px) {
 }
 
 
-/*.table {
+.table {
     display: flex;
 }
 
