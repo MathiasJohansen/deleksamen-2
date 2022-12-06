@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 0.2fr auto 1fr auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "header header header"
                         "nav nav nav"
                         ". main ."
@@ -22,6 +22,7 @@ header{
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    height: auto;
 }
 
 h1 a{
@@ -59,7 +60,9 @@ nav a{
 nav a:hover{
     background-color: #361d32;
     color: white;
+    text-decoration: underline;
 }
+
 
 main{
     grid-area: main;
@@ -144,8 +147,8 @@ article img{
 .article-section2 img{
     height: auto; 
     width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+    max-width: 500px; 
+    max-height: auto;
     padding: 1rem; 
     flex-wrap: wrap;
 }
@@ -171,6 +174,31 @@ article img{
     flex-direction: row;
 }
 
+.article-section3 article form{
+    display: flex;
+    flex-direction: column;
+}
+.article-section3 article form label{
+    
+    margin-top: 1rem;
+}
+.article-section3 article form iframe{
+    
+    margin-top: 1rem;
+}
+.article-section3 article a{
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: 4px;
+
+}
+
+.article-section3 article a:hover{
+    text-decoration: underline;
+    color: #361d32;
+}
 
 .table {
     display: flex;
@@ -227,7 +255,7 @@ https://stackoverflow.com/questions/8865458/how-do-i-vertically-center-text-with
 
 footer{
     color: white;
-    font-size: 1.5vh;
+    font-size: 2.5vh;
     padding: 1rem;
     background-color: #543c52;
     grid-area: footer;
@@ -235,12 +263,42 @@ footer{
     flex-direction: column;
     text-align: left;
 }
+@media only screen and (min-device-width: 601px) and (max-device-width: 1100){
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns:3fr;
+        grid-template-rows: 0.2fr auto 1fr auto;
+        grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
+        background-color: #edd2cb;
+    }
+}
 
-@media only screen
+.article-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+.article-section article{
+    padding-bottom: 1rem;
+}
 
-and (min-device-width: 375px)
+.article-section3 article form iframe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 450px;
+    
+}
 
-and (max-device-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     .table {
         display: flex;
         max-width: 90%;
@@ -297,8 +355,8 @@ and (max-device-width: 600px) {
         margin: 0;
         min-height: 100vh;
         display: grid;
-        grid-template-columns:2fr;
-        grid-template-rows: 0.2fr auto 1fr auto;
+        grid-template-columns:3fr;
+        grid-template-rows: auto auto auto auto;
         grid-template-areas: "header"
                             "nav"
                             "main"
@@ -329,5 +387,12 @@ and (max-device-width: 600px) {
         align-items: center;
         flex-direction: column;
     
+    }
+    .article-section3 article form iframe{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: fit-content;
+
     }
 }

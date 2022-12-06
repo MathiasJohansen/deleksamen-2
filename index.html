@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hjemmeside">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css%22%3E">
     <!--Bruker normalize som vane. Denne hjelper CSS'en med å fungere så bra som mulig på forskjellige nettlesere-->
+    <meta property="og:url" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Webutvikling - Mappeeksamen - Mathias">
+    <meta property="og:description" content="Nettside for mappeeksamen høstsemester 2022">
+    <meta property="og:image" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/images/lyn.jpg">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="font/css/fontawesome.css" rel="stylesheet">
     <link href="font/css/brands.css" rel="stylesheet">
@@ -19,7 +25,7 @@
     </header>
     <nav>
         <ul>
-            <li class="logo"><a href="index.html"><i class="fa-solid fa-bolt-lightning"></i></a></li>
+            <li class="logo"><a href="index.html" aria-label="Hjem-knapp"><i class="fa-solid fa-bolt-lightning"></i></a></li>
             <li><a href="index.html">Hjem</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
             <li><a href="cms.html">CMS</a></li>
@@ -58,6 +64,17 @@
         <h3>Kontaktinformasjon: </h3>
         <p>Adresse: Gatenavn 123</p>
         <p>Telefonnummer: 69696969</p>
+
+        <!--
+        Hentet share-knapper fra denne siden, fjernet og endret for å passse det jeg trenger i koden.    
+        https://www.addtoany.com/buttons/for/website
+        -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_pinterest"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
     </footer>
 </body>
 </html>

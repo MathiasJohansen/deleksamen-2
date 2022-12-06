@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Universal utforming vs Search Engine Optimization">
+    <!--https://developers.facebook.com/docs/plugins/share-button-->
+    <meta property="og:url" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/uuvsseo.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Webutvikling - Mappeeksamen - UU VS SEO - Mathias">
+    <meta property="og:description" content="Sammenlikning av Universal Utforming og Search Engine Optimization">
+    <meta property="og:image" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/images/lyn.jpg">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css%22%3E">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="font/css/fontawesome.css" rel="stylesheet">
@@ -17,7 +24,7 @@
     </header>
     <nav>
         <ul>
-            <li class="logo"><a href="index.html"><i class="fa-solid fa-bolt-lightning"></i></a></li>
+            <li class="logo"><a href="index.html" aria-label="Hjem-knapp"><i class="fa-solid fa-bolt-lightning"></i></a></li>
             <li><a href="index.html">Hjem</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
             <li><a href="cms.html">CMS</a></li>
@@ -27,7 +34,7 @@
     </nav>
     <main class="mainArticle">
         <section class="article-section2">
-            <h2>Overskrift</h2>
+            <h2>UU og SEO</h2>
                 <article>
                     <p>
                         UU og SEO, også kjent som Universell Utforming og Search Engine Optimization(Søkemotoroptimalisering). Er to kjempeviktige faguttrykk innen webutvikling og webdesign. 
@@ -64,8 +71,9 @@
                         SEO
                     </div>
                     <div class="rowTitle">
-                        Likheter/<br>
-                        Ulikheter
+                        Hvordan<br>
+                        Det blir<br>
+                        Implementert
                     </div>
                 </div>  
                 <div class="column2">
@@ -75,7 +83,7 @@
                     </div>
                     <div class="row">Gir struktur. Er bra for skjermoppleser. Brukere med motoriske vansker kan manøvrere enklere når det er struktur og logikk bak designet. </div>
                     <div class="row">Søkemotorer liker sider med struktur og mening. Taggene deler inn innhold på en logisk måte. </div>
-                    <div class="row"></div>
+                    <div class="row">Semantiske tagger: header, nav, main, body, footer, med mer. Disse bli plassert og brukt for å dele opp og forklare til søkemotorer hva innholdet på nettsiden er</div>
                 </div>  
                 <div class="column3">    
                     <div class="rowTitle">
@@ -84,7 +92,7 @@
                     </div>
                     <div class="row">Det finnes mange forskjellige typer skjermer for folk med motoriske og kognitive vansker. Derfor er det viktig at nettsiden kan tilpasses de fleste type skjermer. </div>
                     <div class="row">Google tar mobilversjon mest til betraktning, hvis nettsiden ikke har en mobilversjon så havner du ikke på google. </div>
-                    <div class="row"></div>
+                    <div class="row">Handler om hvordan innholdet på nettsiden skalerer i forhold til skjermstørrelse. Ting som flex, auto og breakpoints blir brukt for å gjøre dette på best mulig måte.</div>
                 </div>  
                 <div class="column4">
                     <div class="rowTitle">
@@ -94,15 +102,37 @@
                     <div class="row">Hjelper til med alternativ manøvrering av nettsiden.  </div>
                     <div class="row">Hjelper søkemotorer å finne spesifike deler av nettsiden din. Eks, deler av en oppskrift. Søkemotoren vil forstå innholdet, istedet for å bare lese det opp. Eks, navn kan bli forstått som ett navn og ikke bare tekst.
                     </div>
-                    <div class="row"></div>
+                    <div class="row">Dette blir lagt til som en ekstra tag, slik at søkemotorer kan forstå innholdet på nettsiden, likt som semantiske tagger, men enda mer forklarende.</div>
                 </div> 
             </div>
+            <article id="kilder">
+                <p>
+                    Kilder for tabell: 
+                </p>
+                <p><a href="https://hiof.instructure.com/courses/6307/files/1165390?wrap=1">1 </a></p>
+
+                <p><a href="https://hiof.instructure.com/courses/6307/files/1207869?wrap=1">2 </a></p>
+
+                <p><a href="https://hiof.instructure.com/courses/6307/files/1181811?wrap=1">3 </a></p>
+                
+            </article>
         </section>
     </main>
     <footer>
         <h3>Kontaktinformasjon: </h3>
         <p>Adresse: Gatenavn 123</p>
         <p>Telefonnummer: 69696969</p>
+
+        <!--
+        Hentet share-knapper fra denne siden, fjernet og endret for å passse det jeg trenger i koden.    
+        https://www.addtoany.com/buttons/for/website
+        -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_pinterest"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
     </footer>
 </body>
 </html>

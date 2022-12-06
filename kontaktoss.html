@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt oss side, med kontaktskjema">
+    <!--https://developers.facebook.com/docs/plugins/share-button-->
+    <meta property="og:url" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/kontaktsoss.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Webutvikling - Mappeeksamen - Kontakt oss - Mathias">
+    <meta property="og:description" content="Kontakt side">
+    <meta property="og:image" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/images/lyn.jpg">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css%22%3E">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="font/css/fontawesome.css" rel="stylesheet">
@@ -17,7 +24,7 @@
     </header>
     <nav>
         <ul>
-            <li class="logo"><a href="index.html"><i class="fa-solid fa-bolt-lightning"></i></a></li>
+            <li class="logo"><a href="index.html" aria-label="Hjem-knapp" ><i class="fa-solid fa-bolt-lightning" ></i></a></li>
             <li><a href="index.html">Hjem</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
             <li><a href="cms.html">CMS</a></li>
@@ -29,9 +36,29 @@
         <section class="article-section3">
             <article>
                 <h2>Kontakt Oss <i class="fa-solid fa-phone"></i></h2>
-                <h3>Telefonnummer: 69696969</h3>
-                <h3>Facebook</h3>
-                <h3>Epost: epost@adresse.no</h3>
+                <h3><i class="fa-solid fa-hashtag"></i> Telefonnummer: 69 60 80 00</h3>
+                <h3><i class="fa-brands fa-facebook"></i> Facebook: <a href="https://www.facebook.com/hiofnorge/">/hiofnorge/</a></h3>
+                <h3><i class="fa-solid fa-envelope"></i> Epost:<a href="mailto:postmottak@hiof.no">epost@adresse.no</a></h3>
+                <!--
+
+                    kilde:
+                    https://www.w3schools.com/tags/tag_textarea.asp
+                -->
+                <form action="eksempel.php" method="GET">
+                    <label for="fornavn">Fornavn: </label>
+                    <input type="text" name="fnavn" id="fornavn" placeholder="Ola">
+                    <label for="etternavn">Etternavn: </label>
+                    <input type="text" name="enavn" id="etternavn" placeholder="Nordmann">
+                    <label for="epost">E-post: </label>
+                    <input type="text" name="epost" id="epost" placeholder="olanordmann@epost.no">
+                    <label for="melding">Din melding her: </label> 
+                    <textarea id="melding" name="melding" rows="4" cols="50" placeholder="Hei, jeg lurer på..."></textarea>
+                    <input type="submit" value="Send Melding!">
+
+                    
+                    
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4094.370629636074!2d11.349123307851977!3d59.12929977904773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1670336522605!5m2!1sno!2sno" width="450" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </article>
         </section>
 
@@ -40,6 +67,17 @@
         <h3>Kontaktinformasjon: </h3>
         <p>Adresse: Gatenavn 123</p>
         <p>Telefonnummer: 69696969</p>
+
+        <!--
+        Hentet share-knapper fra denne siden, fjernet og endret for å passse det jeg trenger i koden.    
+        https://www.addtoany.com/buttons/for/website
+        -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_pinterest"></a>
+            </div>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
     </footer>
 </body>
 </html>

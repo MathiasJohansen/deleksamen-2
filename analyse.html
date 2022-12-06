@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Side for analyse av Seo, UU og heuristisk evaluering">
+    <!--https://developers.facebook.com/docs/plugins/share-button-->
+    <meta property="og:url" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/analyse.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Webutvikling - Mappeeksamen - Analyse av nettside - Mathias">
+    <meta property="og:description" content="Analyse av nettside">
+    <meta property="og:image" content="https://itstud.hiof.no/~mathialj/Deleksamen3_Mathias/images/lyn.jpg">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css%22%3E">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="font/css/fontawesome.css" rel="stylesheet">
     <link href="font/css/brands.css" rel="stylesheet">
     <link href="font/css/solid.css" rel="stylesheet">
+    
     <title>Analyse</title>
 </head>
 <body>
@@ -17,7 +25,7 @@
     </header>
     <nav>
         <ul>
-            <li class="logo"><a href="index.html"><i class="fa-solid fa-bolt-lightning"></i></a></li>
+            <li class="logo"><a href="index.html" aria-label="Hjem-knapp"><i class="fa-solid fa-bolt-lightning"></i></a></li>
             <li><a href="index.html">Hjem</a></li>
             <li><a href="uuvsseo.html">UU vs SEO</a></li>
             <li><a href="cms.html">CMS</a></li>
@@ -27,12 +35,53 @@
     </nav>
     <main>
         <section class="article-section2">
-            <h2>Overskrift</h2>
+            <h2>Analyse om SEO go UU på nettsiden</h2>
             <article>
-                <p>Lucas ipsum dolor sit amet hutt sebulba moff tusken raider darth bespin fett ahsoka chewbacca darth. C-3p0 han jade jawa chewbacca. Mon bespin solo skywalker maul chewbacca chewbacca moff jinn. Endor leia hutt moff. Fett skywalker lobot yavin gonk. Kashyyyk anakin c-3po mace. Mace maul organa obi-wan wicket r2-d2. Luuke lars moff endor. Calamari organa solo qui-gonn. Leia sebulba lobot darth kamino owen. Darth sidious jabba wicket mon ben r2-d2 owen. Solo solo luuke darth dooku skywalker ackbar sebulba chewbacca.
-                Organa luuke darth dagobah yoda lobot vader owen.  </p>
-            <img src="images/lyn.jpg" alt="bilde">
-        </article>
+                <h3>SEO analyse</h3>
+                <p>Etter å ha sendt nettsiden gjennom lighthouse, så har jeg fått tilbake en rapport som sier at jeg oppfyller 90 av mulige 100 poeng på SEO. Det eneste som mangler i følge lighthouse er meta descriptions på siden. Heldigvis er dette en enkel fiks. Fikser dette ved å legge til <img src="images/kodebilde1.PNG" alt="bilde av kodeutsnitt"></p>
+                <p>FØR:</p>
+                <img src="images/SEOBF.PNG" alt="bilde av SEO analyse før endring">
+                <p>ETTER:</p>
+                <img src="images/SEOAF.PNG" alt="bilde av SEO analyse etter endring"> 
+                <h3>UU analyse</h3>
+                <p>Analysen som lighthouse ga meg på accessibility eller UU var 95 ut av 100 mulige poeng. Her får jeg kun ett punkt for forbedring. 
+
+                Det forteller meg at “Link do not have a discernible name”. Problemet er at bildet som er en link ikke har et navn for skjermlesere. Dette løser man ved å legge til en aria-label i  a-tagen for bildet. eks. aria-label=”Hjem-knapp”</p>
+                
+                <p>FØR:</p>
+                <img src="images/UUBF.PNG" alt="bilde av UU analyse før endring">
+                <p>ETTER:</p>
+                <img src="images/UUAF.PNG" alt="bilde av UU analyse etter endring"> 
+            </article>
+                <div class="table">
+                    <div class="column1">
+                        <div class="row-invis"></div>
+                        <div class="rowTitle">
+                            Før
+                        </div>
+                        <div class="rowTitle">
+                            ETTER
+                        </div>
+                        
+                    </div>  
+                    <div class="column2">
+                        <div class="rowTitle">
+                            Universal Utforming på nettsiden
+                        </div>
+                        <div class="row">95/100 poeng. Én feil, Links do not have a discernable name.</div>
+                        <div class="row">100/100 poeng. Rettet opp i feilen ved å legge til en aria-label i a-tagen</div>
+                        
+                    </div>  
+                    <div class="column3">    
+                        <div class="rowTitle">
+                            Search Enging Optimization på nettsiden
+                        </div>
+                        <div class="row">90/100 poeng. Én feil, Document does not have a meta description.</div>
+                        <div class="row">100/100poeng. Rettet opp i feilen ved å legge til </div>
+                        
+                    </div>
+                </div>
+             
         </section>
 
     </main>
@@ -40,6 +89,17 @@
         <h3>Kontaktinformasjon: </h3>
         <p>Adresse: Gatenavn 123</p>
         <p>Telefonnummer: 69696969</p>
+        <!--
+        Hentet share-knapper fra denne siden, fjernet og endret for å passse det jeg trenger i koden.    
+        https://www.addtoany.com/buttons/for/website
+        -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_twitter"></a>
+        <a class="a2a_button_pinterest"></a>
+        </div>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+    
     </footer>
 </body>
 </html>
